@@ -1,2 +1,51 @@
-# GaussSystemSolver
-An app to solve systems of linear equations with Gaussian Elimination algorithm. Written as an exercise in window app development.
+# 🧮 GaussSystemSolver
+
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET 8](https://img.shields.io/badge/.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Blazor](https://img.shields.io/badge/Blazor-512BD4?style=for-the-badge&logo=blazor&logoColor=white)
+
+A modern web-based calculator for solving systems of linear equations using the **Gaussian Elimination** method. This project bridges rigorous mathematical backend logic with an experimental "Nuclear UI."
+
+
+
+## 🚀 About the Project
+
+This application automates the process of solving Systems of Linear Algebraic Equations (SLAE). Simply input your coefficients, and the algorithm handles the heavy lifting of row reduction and variable calculation.
+
+### Key Features:
+* **Dynamic Grid:** Add or remove equations on the fly with a responsive interface.
+* **Smart Validation:** The "Solve" button unlocks only when the system is mathematically ready for calculation.
+* **Industrial Design:** A dark-themed "Nuclear UI" designed for focus and clarity.
+* **Custom Tooltips:** Interactive, high-contrast tooltips for blocked actions.
+
+### 📐 Mathematical Note
+The solver utilizes a standard **Gaussian Elimination** algorithm. It is designed to find **one of the possible solutions** for a given system. Please note that for systems with infinite solutions (dependent systems), the algorithm will return a specific solution based on the row-reduction outcome.
+
+## 🛠 Tech Stack
+
+* **Core Logic:** C# / .NET 8
+* **Web Framework:** Blazor WebAssembly (WASM)
+* **Styling:** Pure CSS3 (featuring Flexbox and CSS Isolation)
+
+---
+
+## ⚠️ Disclaimer
+
+> **Educational Purposes:** This project was created specifically for educational reasons to practice linear algebra algorithms and explore the Blazor ecosystem.
+
+### Frontend Note (Backend-Dev Style) 🛠️
+I am primarily a **Backend Developer** whose heart belongs to C# and strict typing. While exploring the frontend source code, you might notice:
+* **Chaotic CSS:** Styles were written in a moment of inspiration and a desperate battle with `z-index`.
+* **Experimental UI:** The layout might behave unpredictably if you click everything at once.
+* **"It works - don't touch it" Principle:** The frontend is a mix of magic and "hacks" that somehow form a working interface.
+
+If you are a frontend perfectionist, I recommend brewing some chamomile tea before inspecting the `.razor` and `.css` files.
+
+---
+
+## 🏗 How to Run
+
+1. Ensure you have the **.NET 8 SDK** installed.
+2. Clone the repository:
+   ```bash
+   git clone [https://github.com/peoplessmusic/GaussSystemSolver.git](https://github.com/peoplessmusic/GaussSystemSolver.git)
