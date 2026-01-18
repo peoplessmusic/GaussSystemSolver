@@ -1,0 +1,6 @@
+/* Если внутри EquationRow есть свои обертки, им тоже нужно запретить распирание */
+.equation-row[b-uxauu70nhv] {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}

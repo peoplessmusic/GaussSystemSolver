@@ -1,0 +1,36 @@
+﻿<div class="equation-row-inner">
+    @for (int i = 0; i < Equation.Variables.Count; i++)
+    {
+        <InputComponent State="Equation.Variables[i]" OnChanged="@OnChanged" />
+
+        <span class="var">@GetVariableName(i)</span>
+
+        @if (i < Equation.Variables.Count - 1)
+        {
+            <span class="plus">+</span>
+        }
+    }
+    
+    <span class="equals">=</span>
+
+    <InputComponent State="Equation.FreeMember" OnChanged="@OnChanged"/>
+</div>
+
+@code {
+    [Parameter] public EquationState Equation { get; set; } = default!;
+    
+    [Parameter] public EventCallback OnChanged { get; set; }
+
+    private static string GetVariableName(int index)
+    {
+        string name = "";
+        do
+        {
+            name = (char)('a' + (index % 26)) + name;
+            index = index / 26 - 1;
+        } while (index >= 0);
+        return name;
+    }
+}
+
+

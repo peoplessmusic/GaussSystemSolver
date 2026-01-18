@@ -1,0 +1,55 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+        
+        <div class="info-drawer @(_isSidebarOpen ? "open" : "")">
+            <div class="drawer-handle" @onclick="ToggleSidebar">
+                <span class="handle-icon">@(_isSidebarOpen ? "❮" : "❯")</span>
+            </div>
+
+            <div class="drawer-content">
+                <h3>SYSTEM INFO</h3>
+
+                <div class="drawer-section">
+                    <p>This application provides ONE of the possible solutions for a system of linear equations.</p>
+                    <p>It is powered by the <b>Gaussian Elimination</b> algorithm.</p>
+                </div>
+
+                <hr class="drawer-hr" />
+
+                <ul class="drawer-guide">
+                    <li>Add an equation — press <kbd class="k-add">+</kbd></li>
+                    <li>Remove an equation — use <kbd class="k-del">✕</kbd> next to the row</li>
+                    <li>To solve, fill all coefficients with valid numeric values</li>
+                    <li>Once you do that, the <span class="highlight">Solve</span> button unlocks automatically.</li>
+                    <li>To clear all inputs, press the <span class="highlight">Reset</span> button</li>
+                </ul>
+
+                <div class="drawer-easter-egg">
+                    <p>If you found this app useful, I feel kinda sorry for you, as you are likely a student...</p>
+                    <p><b>Hang in there!</b></p>
+                    <p class="sub-text">One day you might start doing this on weekends just for fun... (Help me)</p>
+                </div>
+
+                <div class="drawer-footer">
+                    Status: Operational
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+    
+    @code {
+        private bool _isSidebarOpen = false;
+
+        private void ToggleSidebar() => _isSidebarOpen = !_isSidebarOpen;
+    }

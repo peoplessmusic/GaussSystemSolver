@@ -1,0 +1,18 @@
+﻿<input class="coeff-input @(State.HasText && !State.IsValid ? "error" : "")"
+       value="@State.Text"
+       @oninput="OnInput"
+       style="width: @(Math.Max(State.Text.Length, 3) + 1)ch;"/>
+
+
+@code {
+    [Parameter] public InputState State { get; set; } = default!;
+    
+    [Parameter] public EventCallback OnChanged { get; set; }
+    private async Task OnInput(ChangeEventArgs e)
+    {
+        State.Update(e.Value?.ToString() ?? string.Empty);
+        await OnChanged.InvokeAsync();
+    }
+}
+
+

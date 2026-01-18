@@ -1,0 +1,51 @@
+﻿<div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+    <div class="solve-btn-wrapper" 
+         data-tooltip="@(!State.CanSolve ? "Please fill all fields first" : null)">
+        <button class="solve-btn" 
+                disabled="@(!State.CanSolve)"
+                @onclick="State.Solve"> 
+            Solve
+        </button>
+    </div>
+    @if (State.Solution != null || State.ErrorMessage != null)
+    {
+        <div class="solution-output">
+            <button class="close-solution" @onclick="ClearResults">✕</button>
+            @if (State.ErrorMessage != null)
+            {
+                <div class="error">⚠️ @State.ErrorMessage</div>
+            }
+            else
+            {
+                <div style="color: #6D675E; font-size: 0.8rem; margin-bottom: 10px; border: none;">
+                    Result:
+                </div>
+                @for (int i = 0; i < State.Solution!.Length; i++)
+                {
+                    <div><span style="color: #E8E2D8;">@GetVariableName(i)</span> = @State.Solution[i]</div>
+                }
+            }
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public AppState State { get; set; } = default!;
+
+    private static string GetVariableName(int index)
+    {
+        string name = "";
+        do
+        {
+            name = (char)('a' + (index % 26)) + name;
+            index = index / 26 - 1;
+        }
+        while (index >= 0);
+        return name;
+    }
+    
+    private void ClearResults()
+    {
+        State.ClearResutls();
+    }
+}
