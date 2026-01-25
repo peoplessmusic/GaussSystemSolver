@@ -37,7 +37,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <ApplicationIcon>appicon.ico</ApplicationIcon>
+        <ApplicationIcon>applaunchicon.ico</ApplicationIcon>
     </PropertyGroup>
 
     <ItemGroup>
