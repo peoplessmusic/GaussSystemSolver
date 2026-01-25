@@ -1,7 +1,7 @@
 # 🧮 GaussSystemSolver
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![.NET 8](https://img.shields.io/badge/.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![.NET 9](https://img.shields.io/badge/.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?style=for-the-badge&logo=blazor&logoColor=white)
 
 A modern web-based calculator for solving systems of linear equations using the **Gaussian Elimination** method. This project bridges rigorous mathematical backend logic with an experimental "Nuclear UI."
@@ -27,6 +27,15 @@ The solver utilizes a standard **Gaussian Elimination** algorithm. It is designe
 * **Web Framework:** Blazor WebAssembly (WASM)
 * **Styling:** Pure CSS3 (featuring Flexbox and CSS Isolation)
 
+## 🧪 Testing Strategy (The "Modular" Approach)
+You won't find a `tests/` folder in this repository, and here is why:
+* **Atomic Validation:** The project was developed in isolated logic blocks.
+* **Dev-Time Coverage:** Each mathematical module was rigorously tested with temporary test-suites during its specific development phase.
+* **Immutability:** Once a block (like the core Gauss algorithm) reached a "verified" state, it was frozen.
+* **Manual Integration:** Final stability was confirmed through end-to-end manual testing within the UI (I'm a senior QA after all...).
+
+*Basically: If it's not broken, I've already tested it while I was building it.*
+
 ---
 
 ## ⚠️ Disclaimer
@@ -43,9 +52,15 @@ If you are a frontend perfectionist, I recommend brewing some chamomile tea befo
 
 ---
 
+## 🖥 Platform Support
+While the core logic is built on cross-platform .NET, this specific build is configured as a **Standalone Windows Application**.
+* **OS:** Windows 10 (1809+) or Windows 11.
+* **Engine:** Uses WebView2 Runtime (included in modern Windows updates).
+
+
 ## 🏗 How to Run
 
-1. Ensure you have the **.NET 8 SDK** installed.
+1. Ensure you have the **.NET 9 SDK** installed.
 2. Clone the repository:
    ```bash
    git clone [https://github.com/peoplessmusic/GaussSystemSolver.git](https://github.com/peoplessmusic/GaussSystemSolver.git)
