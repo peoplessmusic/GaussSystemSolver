@@ -1,0 +1,50 @@
+﻿.header-title {
+    font-size: 1.4rem;
+    color: #66BB6A;  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.header-stats {
+    font-size: 0.9rem;
+    color: #6D675E;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    background: rgba(0,0,0,0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #3D3935;
+    flex: 0 0 auto;
+}
+
+.header-actions { 
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-reset {
+    background: transparent;
+    border: 1px solid #4A453F;
+    color: #6D675E;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-family: 'Consolas', monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.btn-reset:hover {
+    border-color: #E57373;
+    color: #E57373;
+}
+
+.btn-reset:active {
+    background: rgba(229, 115, 115, 0.1);
+}

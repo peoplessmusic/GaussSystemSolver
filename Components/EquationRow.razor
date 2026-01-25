@@ -3,7 +3,7 @@
     {
         <InputComponent State="Equation.Variables[i]" OnChanged="@OnChanged" />
 
-        <span class="var">@GetVariableName(i)</span>
+        <span class="var">@AppState.GetVariableName(i)</span>
 
         @if (i < Equation.Variables.Count - 1)
         {
@@ -17,20 +17,8 @@
 </div>
 
 @code {
-    [Parameter] public EquationState Equation { get; set; } = default!;
-    
+    [Parameter] public required EquationState Equation { get; set; }
     [Parameter] public EventCallback OnChanged { get; set; }
-
-    private static string GetVariableName(int index)
-    {
-        string name = "";
-        do
-        {
-            name = (char)('a' + (index % 26)) + name;
-            index = index / 26 - 1;
-        } while (index >= 0);
-        return name;
-    }
 }
 
 

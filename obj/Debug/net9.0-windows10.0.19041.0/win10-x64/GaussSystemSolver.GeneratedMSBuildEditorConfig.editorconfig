@@ -63,6 +63,20 @@ build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFcXVhdGlvblJvdy5yYXpv
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-uxauu70nhv
 
+[C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/HeaderBar.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXJCYXIucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-xus1rsbmk5
+
+[C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/InfoDrawer.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbmZvRHJhd2VyLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-by5k2izesv
+
 [C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/InputComponent.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
@@ -70,26 +84,19 @@ build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbnB1dENvbXBvbmVudC5y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-knardro59v
 
-[C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/Layout/MainLayout.razor]
+[C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYWluTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
-build_metadata.AdditionalFiles.CssScope = b-ddra7zrvm5
+build_metadata.AdditionalFiles.CssScope = b-k3lsitzuhv
 
-[C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/Layout/NavMenu.razor]
+[C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/MainPage.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYWluUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
-build_metadata.AdditionalFiles.CssScope = b-6i2aipown0
-
-[C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/Pages/MainPage.razor]
-build_metadata.AdditionalFiles.GenKind = 
-build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYWluUGFnZS5yYXpvcg==
-build_metadata.AdditionalFiles.RelativePath = 
-build_metadata.AdditionalFiles.CssScope = b-tfb0plmjmh
+build_metadata.AdditionalFiles.CssScope = b-bm3ruj7ctr
 
 [C:/Users/HONOR/RiderProjects/GaussSystemSolver/Components/SolutionComponent.razor]
 build_metadata.AdditionalFiles.GenKind = 

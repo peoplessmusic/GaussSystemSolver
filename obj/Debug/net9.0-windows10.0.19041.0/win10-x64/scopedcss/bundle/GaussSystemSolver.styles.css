@@ -5,6 +5,203 @@
     padding: 10px;
     border-bottom: 1px solid #eee;
 }
+/* /Components/HeaderBar.razor.rz.scp.css */
+.header-title[b-xus1rsbmk5] {
+    font-size: 1.4rem;
+    color: #66BB6A;  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.header-stats[b-xus1rsbmk5] {
+    font-size: 0.9rem;
+    color: #6D675E;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    background: rgba(0,0,0,0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #3D3935;
+    flex: 0 0 auto;
+}
+
+.header-actions[b-xus1rsbmk5] { 
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-reset[b-xus1rsbmk5] {
+    background: transparent;
+    border: 1px solid #4A453F;
+    color: #6D675E;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-family: 'Consolas', monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.btn-reset:hover[b-xus1rsbmk5] {
+    border-color: #E57373;
+    color: #E57373;
+}
+
+.btn-reset:active[b-xus1rsbmk5] {
+    background: rgba(229, 115, 115, 0.1);
+}
+/* /Components/InfoDrawer.razor.rz.scp.css */
+.info-drawer[b-by5k2izesv] {
+    position: fixed;
+    top: 5vh;
+    height: 90vh;
+    width: 500px;
+    left: -500px;
+
+    background-color: #161412;
+    border: 1px solid #3D3935;
+    border-right: none;
+    border-radius: 0 12px 12px 0;
+
+    transition: left 0.4s cubic-bezier(0.05, 0.7, 0.1, 1);
+    z-index: 999;
+    box-shadow: -15px 0 30px rgba(0,0,0,0.6);
+}
+
+.info-drawer.open[b-by5k2izesv] {
+    left: 0;
+}
+
+.drawer-handle[b-by5k2izesv] {
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 70px;
+    background-color: #161412;
+    border: 1px solid #3D3935;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #66BB6A;
+    opacity: 40%;
+}
+
+.drawer-handle:hover[b-by5k2izesv] {
+    opacity: 1;
+}
+
+.drawer-content[b-by5k2izesv] {
+    padding: 10px 15px;
+    font-family: 'Consolas', monospace;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.drawer-content h3[b-by5k2izesv] {
+    color: #66BB6A;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.drawer-description[b-by5k2izesv]{
+    color: #5c636a;
+}
+
+.drawer-description p[b-by5k2izesv] {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.drawer-hr[b-by5k2izesv] {
+    border: 0;
+    border-top: 1px solid #3D3935;
+    margin: 20px 0;
+}
+
+.drawer-manual[b-by5k2izesv] {
+    list-style: none;
+    padding: 0;
+    font-size: 0.82rem;
+    color: #A09B94;
+}
+
+.drawer-manual li[b-by5k2izesv] {
+    margin-bottom: 10px;
+    line-height: 1.25;
+}
+
+/* Styling for buttons mentioned in text */
+kbd[b-by5k2izesv] {
+    background-color: #3D3935;
+    border-radius: 3px;
+    border: 1px solid #4A453F;
+    color: #E8E2D8;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 5px;
+    white-space: nowrap;
+    font-family: 'Consolas', monospace;
+}
+
+.k-add[b-by5k2izesv] { color: #66BB6A; }
+.k-del[b-by5k2izesv] { color: #E57373; }
+
+.highlight[b-by5k2izesv] {
+    color: #E8E2D8;
+}
+
+.drawer-joke[b-by5k2izesv] {
+    margin-top: 4px;
+    padding: 12px;
+    background: rgba(0,0,0,0.2);
+    border-left: 2px solid #4A453F;
+    color: #6c757d;
+}
+
+.drawer-joke p[b-by5k2izesv] {
+    font-size: 0.75rem;
+    line-height: 1.3;
+}
+
+.drawer-joke .sub-text[b-by5k2izesv] {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    margin-top: 12px;
+    color: #6c757d;
+}
+
+.drawer-footer[b-by5k2izesv] {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-size: 0.7rem;
+    color: #4A453F;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* /Components/InputComponent.razor.rz.scp.css */
 .coeff-input[b-knardro59v] {
     /* Чтобы твоя формула в style работала точно по количеству символов */
@@ -45,189 +242,25 @@
     -webkit-appearance: none;
 }
 
-/* /Components/Layout/MainLayout.razor.rz.scp.css */
-.page[b-ddra7zrvm5] {
+/* /Components/MainLayout.razor.rz.scp.css */
+.page[b-k3lsitzuhv] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-ddra7zrvm5] {
+main[b-k3lsitzuhv] {
     flex: 1;
 }
 
-.sidebar[b-ddra7zrvm5] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row[b-ddra7zrvm5] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row[b-ddra7zrvm5]  a, .top-row[b-ddra7zrvm5]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
-
-        .top-row[b-ddra7zrvm5]  a:hover, .top-row[b-ddra7zrvm5]  .btn-link:hover {
-            text-decoration: underline;
-        }
-
-        .top-row[b-ddra7zrvm5]  a:first-child {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-@media (max-width: 640.98px) {
-    .top-row[b-ddra7zrvm5] {
-        justify-content: space-between;
-    }
-
-        .top-row[b-ddra7zrvm5]  a, .top-row[b-ddra7zrvm5]  .btn-link {
-            margin-left: 0;
-        }
-}
-
 @media (min-width: 641px) {
-    .page[b-ddra7zrvm5] {
+    .page[b-k3lsitzuhv] {
         flex-direction: row;
     }
-
-    .sidebar[b-ddra7zrvm5] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-ddra7zrvm5] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-        .top-row.auth[b-ddra7zrvm5]  a:first-child {
-            flex: 1;
-            text-align: right;
-            width: 0;
-        }
-
-    .top-row[b-ddra7zrvm5], article[b-ddra7zrvm5] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
 }
-/* /Components/Layout/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-6i2aipown0] {
-    appearance: none;
-    cursor: pointer;
-    width: 3.5rem;
-    height: 2.5rem;
-    color: white;
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem rgba(255, 255, 255, 0.1);
-}
-
-    .navbar-toggler:checked[b-6i2aipown0] {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-.top-row[b-6i2aipown0] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-6i2aipown0] {
-    font-size: 1.1rem;
-}
-
-.bi[b-6i2aipown0] {
-    display: inline-block;
-    position: relative;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.75rem;
-    top: -1px;
-    background-size: cover;
-}
-
-.bi-house-door-fill-nav-menu[b-6i2aipown0] {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
-}
-
-.bi-plus-square-fill-nav-menu[b-6i2aipown0] {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
-}
-
-.bi-list-nested-nav-menu[b-6i2aipown0] {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
-}
-
-.nav-item[b-6i2aipown0] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type[b-6i2aipown0] {
-        padding-top: 1rem;
-    }
-
-    .nav-item:last-of-type[b-6i2aipown0] {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item[b-6i2aipown0]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-        .nav-item[b-6i2aipown0]  a.active {
-            background-color: rgba(255,255,255,0.37);
-            color: white;
-        }
-
-        .nav-item[b-6i2aipown0]  a:hover {
-            background-color: rgba(255,255,255,0.1);
-            color: white;
-        }
-
-.nav-scrollable[b-6i2aipown0] {
-    display: none;
-}
-
-.navbar-toggler:checked ~ .nav-scrollable[b-6i2aipown0] {
-    display: block;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler[b-6i2aipown0] {
-        display: none;
-    }
-
-    .nav-scrollable[b-6i2aipown0] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
-    }
-}
-/* /Components/Pages/MainPage.razor.rz.scp.css */
+/* /Components/MainPage.razor.rz.scp.css */
 /* 1. ГЛАВНЫЙ КОНТЕЙНЕР */
-.nuclear-viewport[b-tfb0plmjmh] {
+.nuclear-viewport[b-bm3ruj7ctr] {
     position: fixed;
     inset: 0;
     display: flex;
@@ -240,7 +273,7 @@ main[b-ddra7zrvm5] {
 }
 
 /* 2. ШАПКА - УЛУЧШЕННАЯ ВЕРСИЯ */
-.header-bar[b-tfb0plmjmh] {
+.header-bar[b-bm3ruj7ctr] {
     flex-shrink: 0;
     /* Увеличиваем высоту за счет вертикального паддинга (было 15, стало 25) */
     padding: 12px 25px;
@@ -258,61 +291,8 @@ main[b-ddra7zrvm5] {
     z-index: 20;
 }
 
-/* СТИЛЬ ЗАГОЛОВКА */
-.header-title[b-tfb0plmjmh] {
-    font-size: 1.4rem; /* Заметно крупнее */
-    color: #66BB6A;   /* Основной зеленый акцент */
-    text-transform: uppercase;
-    letter-spacing: 2px; /* "Разреженный" текст выглядит дороже */
-    margin: 0;
-    flex: 1;
-    justify-content: flex-start;
-}
-
-/* ИНФО О КОЛИЧЕСТВЕ УРАВНЕНИЙ */
-.header-stats[b-tfb0plmjmh] {
-    font-size: 0.9rem;
-    color: #6D675E; /* Приглушенный цвет, чтобы не отвлекать от заголовка */
-    /* Отступ справа, как ты просил */
-    margin: 0;
-    text-align: center;
-    white-space: nowrap;
-    background: rgba(0,0,0,0.2);
-    padding: 5px 15px;
-    border-radius: 20px; /* Эффект "пилюли" */
-    border: 1px solid #3D3935;
-    flex: 0 0 auto;
-}
-
-/* Правая часть (Кнопка Reset) */
-.header-actions[b-tfb0plmjmh] { /* Оберни кнопку в этот класс в HTML, если его нет */
-    flex: 1; /* Занимает всё свободное место справа */
-    display: flex;
-    justify-content: flex-end;
-}
-.btn-reset[b-tfb0plmjmh] {
-    background: transparent;
-    border: 1px solid #4A453F;
-    color: #6D675E;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-family: 'Consolas', monospace;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-transform: uppercase;
-}
-.btn-reset:hover[b-tfb0plmjmh] {
-    border-color: #E57373; /* Подсвечиваем красным при наведении как опасное действие */
-    color: #E57373;
-}
-.btn-reset:active[b-tfb0plmjmh] {
-    background: rgba(229, 115, 115, 0.1);
-}
-
-
 /* 3. СКРОЛЛ-ЗОНА */
-.scroll-container[b-tfb0plmjmh] {
+.scroll-container[b-bm3ruj7ctr] {
     flex-grow: 1;
     overflow: auto; /* Браузер сам решит, когда нужен X, а когда Y */
     padding-bottom: 10px;
@@ -321,7 +301,7 @@ main[b-ddra7zrvm5] {
 }
 
 /* 4. ТАБЛИЦА (GRID) - ИСПРАВЛЕННАЯ ВЕРСИЯ */
-.data-grid[b-tfb0plmjmh] {
+.data-grid[b-bm3ruj7ctr] {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -329,7 +309,7 @@ main[b-ddra7zrvm5] {
     min-width: max-content;
 }
 
-.grid-row[b-tfb0plmjmh] {
+.grid-row[b-bm3ruj7ctr] {
     display: flex; /* Каждая строка — это флекс */
     width: 100%;
     border-radius: 6px;
@@ -339,7 +319,7 @@ main[b-ddra7zrvm5] {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.cell.equation[b-tfb0plmjmh] {
+.cell.equation[b-bm3ruj7ctr] {
     /* Занимает всё пространство, но не сжимается меньше текста */
     flex: 1 0 auto;
     padding: 12px 20px;
@@ -353,7 +333,7 @@ main[b-ddra7zrvm5] {
     border-left: 4px solid #81C784;
 }
 
-.cell.actions[b-tfb0plmjmh] {
+.cell.actions[b-bm3ruj7ctr] {
     /* Липнет к правому краю */
     position: sticky;
     right: 0;
@@ -371,7 +351,7 @@ main[b-ddra7zrvm5] {
 }
 
 /* Кнопка удаления */
-.btn-delete[b-tfb0plmjmh] {
+.btn-delete[b-bm3ruj7ctr] {
     width: 32px;
     height: 32px;
     border-radius: 4px;
@@ -384,14 +364,14 @@ main[b-ddra7zrvm5] {
     justify-content: center;
     transition: all 0.2s;
 }
-.btn-delete:hover[b-tfb0plmjmh] { 
+.btn-delete:hover[b-bm3ruj7ctr] { 
     background: #E57373;
     color: #fff;
     transform: scale(1.1); 
 }
 
 /* 5. ПОДВАЛ (SOLVE) */
-.footer-bar[b-tfb0plmjmh] {
+.footer-bar[b-bm3ruj7ctr] {
     flex-shrink: 0;
     padding: 40px 20px 30px 20px;
     background-color: #252320;
@@ -409,14 +389,14 @@ main[b-ddra7zrvm5] {
 }
 
 /* Увеличиваем Solve */
-.solve-wrapper[b-tfb0plmjmh] {
+.solve-wrapper[b-bm3ruj7ctr] {
     transform: scale(1.2); /* Увеличиваем на 20% */
     overflow: visible !important;
     z-index: 1001;
 }
 
 /* 6. FAB (КНОПКА ДОБАВИТЬ) */
-.fab-add[b-tfb0plmjmh] {
+.fab-add[b-bm3ruj7ctr] {
     position: absolute;
     /* Поднимаем её так, чтобы она была между списком и панелью */
     top: -30px;
@@ -439,63 +419,63 @@ main[b-ddra7zrvm5] {
     transition: all 0.2s ease;
 }
 
-.fab-add:hover[b-tfb0plmjmh] {
+.fab-add:hover[b-bm3ruj7ctr] {
     transform: scale(1.1);
     background-color: #81C784;
 }
-.fab-add:active[b-tfb0plmjmh] { transform: scale(0.95); }
+.fab-add:active[b-bm3ruj7ctr] { transform: scale(0.95); }
 
 
 /* 1. Общая ширина и высота дорожки скролла */
-[b-tfb0plmjmh]::-webkit-scrollbar {
+[b-bm3ruj7ctr]::-webkit-scrollbar {
     width: 6px;  /* Ширина вертикального скролла */
     height: 6px; /* Высота горизонтального скролла */
 }
 
 /* 2. Фон дорожки (делаем прозрачным или в цвет фона) */
-[b-tfb0plmjmh]::-webkit-scrollbar-track {
+[b-bm3ruj7ctr]::-webkit-scrollbar-track {
     background: #1C1A18;
 }
 
 /* 3. Сам "ползунок" (Thumb) */
-[b-tfb0plmjmh]::-webkit-scrollbar-thumb {
+[b-bm3ruj7ctr]::-webkit-scrollbar-thumb {
     background: #3D3935; /* Тёмно-серый, чуть светлее фона */
     border-radius: 10px;
 }
 
 /* 4. Ползунок при наведении (сделаем чуть заметнее) */
-[b-tfb0plmjmh]::-webkit-scrollbar-thumb:hover {
+[b-bm3ruj7ctr]::-webkit-scrollbar-thumb:hover {
     background: #4A453F;
 }
 
 /* Для Firefox (у него свои свойства) */
-*[b-tfb0plmjmh] {
+*[b-bm3ruj7ctr] {
     scrollbar-width: thin;
     scrollbar-color: #3D3935 #1C1A18;
 }
 
 /* Убеждаемся, что ни один родитель не режет тултип */
-.footer-bar[b-tfb0plmjmh],
-.solve-wrapper[b-tfb0plmjmh],
-.solve-btn-wrapper[b-tfb0plmjmh] {
+.footer-bar[b-bm3ruj7ctr],
+.solve-wrapper[b-bm3ruj7ctr],
+.solve-btn-wrapper[b-bm3ruj7ctr] {
     overflow: visible !important;
 }
 
 /* 1. Глобальные фиксы для Solve */
-.solve-wrapper[b-tfb0plmjmh], .solve-btn-wrapper[b-tfb0plmjmh] {
+.solve-wrapper[b-bm3ruj7ctr], .solve-btn-wrapper[b-bm3ruj7ctr] {
     overflow: visible !important;
     position: relative;
     /* Убираем любые z-index тут, пусть берет от футера */
 }
 
 /* 2. БАЗОВЫЙ ТУЛТИП */
-[data-tooltip][b-tfb0plmjmh] {
+[data-tooltip][b-bm3ruj7ctr] {
     position: relative;
 }
 
 /* Используем AFTER для Solve, чтобы не конфликтовать с другими before */
-.solve-btn-wrapper[data-tooltip][b-tfb0plmjmh]::after,
-.btn-reset[data-tooltip][b-tfb0plmjmh]::after {
+.solve-btn-wrapper[data-tooltip][b-bm3ruj7ctr]::after,
+.btn-reset[data-tooltip][b-bm3ruj7ctr]::after {
     content: attr(data-tooltip);
     position: absolute;
     padding: 8px 12px;
@@ -516,38 +496,38 @@ main[b-ddra7zrvm5] {
 }
 
 /* --- ПОЗИЦИЯ ДЛЯ SOLVE (СВЕРХУ) --- */
-.solve-btn-wrapper[data-tooltip][b-tfb0plmjmh]::after {
+.solve-btn-wrapper[data-tooltip][b-bm3ruj7ctr]::after {
     bottom: 110%; /* Над кнопкой */
     left: 50%;
     transform: translateX(-50%) translateY(10px);
 }
 
 /* --- ПОЗИЦИЯ ДЛЯ RESET (СНИЗУ-СЛЕВА) --- */
-.btn-reset[data-tooltip][b-tfb0plmjmh]::after {
+.btn-reset[data-tooltip][b-bm3ruj7ctr]::after {
     top: 130%; /* Под кнопкой */
     right: 0;
     transform: translateY(-10px);
 }
 
 /* --- ХОВЕРЫ --- */
-.solve-btn-wrapper:hover[b-tfb0plmjmh]::after {
+.solve-btn-wrapper:hover[b-bm3ruj7ctr]::after {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
 
-.btn-reset:hover[b-tfb0plmjmh]::after {
+.btn-reset:hover[b-bm3ruj7ctr]::after {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
 /* 3. ВАЖНЫЙ ФИКС ДЛЯ КНОПКИ */
-.solve-btn:disabled[b-tfb0plmjmh] {
+.solve-btn:disabled[b-bm3ruj7ctr] {
     /* Чтобы ховер "протекал" на враппер */
     pointer-events: none !important;
 }
-.solve-btn-wrapper[b-tfb0plmjmh] {
+.solve-btn-wrapper[b-bm3ruj7ctr] {
     /* Враппер должен принимать ховер всегда */
     pointer-events: auto !important;
     display: inline-block;

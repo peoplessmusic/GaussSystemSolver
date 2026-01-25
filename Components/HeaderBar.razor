@@ -1,0 +1,23 @@
+﻿<h1 class="header-title">Gauss System Solver</h1>
+        
+<div class="header-stats">
+    System Size: <span style="color: #E8E2D8;">@State.Equations.Count</span>
+</div>
+        
+<div class="header-actions">
+    <button class="btn-reset tooltip-left" 
+            @onclick="OnClearClick" 
+            data-tooltip="Clear all coefficient inputs without deleting equations.">
+        Clear
+    </button>
+</div>
+
+@code {
+    [Parameter] public required AppState State { get; set; }
+    [Parameter] public EventCallback OnClear { get; set; }
+
+    private async Task OnClearClick()
+    {
+        State.ClearInputsAndResults();
+        await OnClear.InvokeAsync();
+    }}

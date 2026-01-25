@@ -96,7 +96,6 @@ h1:focus {
     }
 }
 
-/* Контейнер для всего приложения, чтобы панель была поверх */
 .main-layout {
     position: relative;
     width: 100vw;
@@ -107,167 +106,17 @@ h1:focus {
 .content {
     padding: 0 !important;
 }
-
-.info-drawer {
-    position: fixed;
-    top: 5vh;
-    height: 90vh;
-    /* Увеличиваем ширину до 350px */
-    width: 500px;
-    left: -500px;
-
-    background-color: #161412;
-    border: 1px solid #3D3935;
-    border-right: none;
-    border-radius: 0 12px 12px 0;
-
-    transition: left 0.4s cubic-bezier(0.05, 0.7, 0.1, 1);
-    z-index: 999;
-    box-shadow: -15px 0 30px rgba(0,0,0,0.6);
-}
-
-.info-drawer.open {
-    left: 0; /* Выезжает ровно до края */
-}
-
-/* УСИК (Handle) */
-.drawer-handle {
-    position: absolute;
-    right: -35px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35px;
-    height: 70px;
-    background-color: #161412;
-    border: 1px solid #3D3935;
-    border-left: none;
-    border-radius: 0 10px 10px 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #66BB6A;
-    opacity: 50%;
-}
-.drawer-handle:hover {
-    opacity: 1;
-}
-
-.drawer-content {
-    padding: 10px 15px;
-    font-family: 'Consolas', monospace;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.drawer-content h3 {
-    color: #66BB6A;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-.drawer-hr {
-    border: 0;
-    border-top: 1px solid #3D3935;
-    margin: 20px 0;
-}
-
-.drawer-list {
-    padding-left: 20px;
-    color: #A09B94;
-    font-size: 0.85rem;
-}
-
-.drawer-list li {
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #E8E2D8;
-}
-
-.drawer-footer {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    font-size: 0.7rem;
-    color: #4A453F;
-}
-
-/* Styling for buttons mentioned in text */
-kbd {
-    background-color: #3D3935;
-    border-radius: 3px;
-    border: 1px solid #4A453F;
-    color: #E8E2D8;
-    display: inline-block;
-    font-size: 0.85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 5px;
-    white-space: nowrap;
-    font-family: 'Consolas', monospace;
-}
-
-.k-add { color: #66BB6A; }
-.k-del { color: #E57373; }
-
-.drawer-guide {
-    list-style: none;
-    padding: 0;
-    font-size: 0.82rem; /* Чуть меньше */
-    color: #A09B94;
-}
-
-.drawer-guide li {
-    margin-bottom: 10px; /* Плотнее друг к другу */
-    line-height: 1.25;
-}
-
-.drawer-section{
-    color: #5c636a;
-}
-
-.drawer-section p {
-    font-size: 0.85rem;
-    margin-bottom: 4px;
-}
-
-.drawer-easter-egg {
-    margin-top: 4px; /* Прижимает блок вниз, если места много */
-    padding: 12px;
-    background: rgba(0,0,0,0.2);
-    border-left: 2px solid #4A453F;
-    color: #6c757d;
-}
-
-.drawer-easter-egg p {
-    font-size: 0.75rem;
-    line-height: 1.3;
-}
-
-.drawer-easter-egg .sub-text {
-    font-size: 0.7rem;
-    opacity: 0.5;
-    margin-top: 12px;
-    color: #6c757d;
-}
-
-
-/* ГЛОБАЛЬНЫЙ ФАЙЛ (app.css) */
-
-/* 1. Убираем любые преграды для Solve */
+/* It's here because there was a conflict with smthg on a component level.
+So I had to put styles in root */
 .solve-wrapper, .solve-btn-wrapper {
     overflow: visible !important;
 }
 
-/* 2. Универсальный тултип через ::after */
+/* Tooltip for buttons. Only worked here for some reason. */
 [data-tooltip] {
     position: relative !important;
 }
 
-/* Если атрибут пустой, ничего не показываем */
 [data-tooltip=""]::after,
 [data-tooltip="null"]::after {
     display: none !important;
@@ -279,14 +128,12 @@ kbd {
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
-    white-space: nowrap;      /* ЗАПРЕЩАЕТ ПЕРЕНОС СЛОВ */
-    width: auto;               /* Позволяет тултипу расширяться под текст */
+    white-space: nowrap;
+    width: auto;
     min-width: max-content;
     text-transform: uppercase;
-    letter-spacing: 1px; /* Добавим немного межбуквенного интервала для читаемости */
+    letter-spacing: 1px;
 
-
-    /* Оформление */
     background-color: #3D3935;
     color: #E8E2D8;
     padding: 8px 12px;
@@ -299,9 +146,9 @@ kbd {
     transition: all 0.2s ease-in-out;
 }
 
-/* 3. Логика для SOLVE (над кнопкой) */
+/* Special magic for solve button, since it can be locked */
 .solve-btn-wrapper[data-tooltip]::after {
-    bottom: 120%; /* Над кнопкой */
+    bottom: 120%;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
 }
@@ -312,7 +159,7 @@ kbd {
     transform: translateX(-50%) translateY(0);
 }
 
-/* 4. Логика для RESET (под кнопкой) */
+
 .btn-reset[data-tooltip]::after {
     top: 130%; /* Под кнопкой */
     right: 0;
@@ -325,8 +172,7 @@ kbd {
     transform: translateY(0);
 }
 
-/* 5. КРИТИЧЕСКИЙ ФИКС ДЛЯ КНОПКИ */
-/* Когда кнопка disabled, события должен ловить враппер */
+/* When button is disabled - events should go to a wrapper */
 .solve-btn:disabled {
     pointer-events: none !important;
 }

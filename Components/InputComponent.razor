@@ -1,11 +1,11 @@
-﻿<input class="coeff-input @(State.HasText && !State.IsValid ? "error" : "")"
+﻿<input class="coeff-input @(State is { HasText: true, IsValid: false } ? "error" : "")"
        value="@State.Text"
        @oninput="OnInput"
        style="width: @(Math.Max(State.Text.Length, 3) + 1)ch;"/>
 
 
 @code {
-    [Parameter] public InputState State { get; set; } = default!;
+    [Parameter] public required InputState State { get; set; }
     
     [Parameter] public EventCallback OnChanged { get; set; }
     private async Task OnInput(ChangeEventArgs e)

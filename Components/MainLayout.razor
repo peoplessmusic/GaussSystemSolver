@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+        
+        <InfoDrawer IsOpen="_isSidebarOpen" OnToggle="ToggleSidebar" />
+    </main>
+</div>
+    
+    @code {
+        private bool _isSidebarOpen;
+        private void ToggleSidebar() => _isSidebarOpen = !_isSidebarOpen;
+    }
