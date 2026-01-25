@@ -1,7 +1,7 @@
 # 🧮 GaussSystemSolver
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![.NET 9](https://img.shields.io/badge/.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![.NET 9](https://img.shields.io/badge/.NET%209-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?style=for-the-badge&logo=blazor&logoColor=white)
 
 A modern web-based calculator for solving systems of linear equations using the **Gaussian Elimination** method. This project bridges rigorous mathematical backend logic with an experimental "Nuclear UI."
